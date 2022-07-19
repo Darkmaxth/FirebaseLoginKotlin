@@ -16,20 +16,12 @@ import firebase.app.firebaseloginkotlin.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
-    val db = FirebaseFirestore.getInstance()
-    private lateinit var binding: FragmentHomeBinding
-    private lateinit var auth: FirebaseAuth
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        super.onCreate(savedInstanceState)
-
-        binding = FragmentHomeBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        auth = Firebase.auth
 
 
         val view = inflater.inflate(R.layout.fragment_home, container, false)
